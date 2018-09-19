@@ -32,6 +32,10 @@ namespace Cschmalenberg1c1
             txtTax.Text = (
                 .06875m * Convert.ToDecimal(txtPretaxTotal.Text)
                 ).ToString("0.00");
+            txtTotal.Text = (
+                Convert.ToDecimal(txtTax.Text)
+                + Convert.ToDecimal(txtPretaxTotal.Text)
+                ).ToString("0.00");
             btnClear.Focus();
         }
 
@@ -44,10 +48,14 @@ namespace Cschmalenberg1c1
         {
             this.Close();
         }
-
-        private void btnClear_Click(object sender, EventArgs e)
+        private void txtTax_TextChanged(object sender, EventArgs e)
         {
-            txtHotDogs.HotDogs.Text = "0";
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtHotDogs.Text = "0";
             txtHamburgers.Text = "0";
             txtHotDogsSubtotal.Text = "0";
             txtHamburgersSubtotal.Text = "0";
@@ -55,6 +63,16 @@ namespace Cschmalenberg1c1
             txtTax.Text = "0";
             txtTotal.Text = "0";
             txtHotDogs.Focus();
+        }
+
+        private void txtPretaxTotal_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtHamburgersSubtotal_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

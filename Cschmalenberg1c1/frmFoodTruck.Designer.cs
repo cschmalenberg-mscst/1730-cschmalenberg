@@ -43,8 +43,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -95,6 +95,7 @@
             this.txtHamburgersSubtotal.TabIndex = 7;
             this.txtHamburgersSubtotal.TabStop = false;
             this.txtHamburgersSubtotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtHamburgersSubtotal.TextChanged += new System.EventHandler(this.txtHamburgersSubtotal_TextChanged);
             // 
             // label3
             // 
@@ -144,6 +145,7 @@
             this.txtPretaxTotal.TabIndex = 9;
             this.txtPretaxTotal.TabStop = false;
             this.txtPretaxTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPretaxTotal.TextChanged += new System.EventHandler(this.txtPretaxTotal_TextChanged);
             // 
             // txtTax
             // 
@@ -155,6 +157,7 @@
             this.txtTax.TabIndex = 10;
             this.txtTax.TabStop = false;
             this.txtTax.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTax.TextChanged += new System.EventHandler(this.txtTax_TextChanged);
             // 
             // txtTotal
             // 
@@ -195,16 +198,6 @@
             this.label7.Text = "Total:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(151, 255);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
-            this.btnClear.TabIndex = 15;
-            this.btnClear.Text = "C&lear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
             // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(256, 255);
@@ -216,14 +209,24 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(145, 255);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.TabIndex = 17;
+            this.btnClear.Text = "C&lear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AcceptButton = this.btnCalculate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 292);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -263,8 +266,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
