@@ -31,9 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtSubtotal = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDiscountpercent = new System.Windows.Forms.TextBox();
+            this.txtDiscountPercent = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtDiscountamount = new System.Windows.Forms.TextBox();
+            this.txtDiscountAmount = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
@@ -63,19 +63,18 @@
             this.label2.Location = new System.Drawing.Point(127, 102);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 13);
-            this.label2.TabIndex = 4;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Discount &percent:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txtDiscountpercent
+            // txtDiscountPercent
             // 
-            this.txtDiscountpercent.Location = new System.Drawing.Point(222, 95);
-            this.txtDiscountpercent.Name = "txtDiscountpercent";
-            this.txtDiscountpercent.ReadOnly = true;
-            this.txtDiscountpercent.Size = new System.Drawing.Size(124, 20);
-            this.txtDiscountpercent.TabIndex = 5;
-            this.txtDiscountpercent.TabStop = false;
+            this.txtDiscountPercent.Location = new System.Drawing.Point(222, 95);
+            this.txtDiscountPercent.Name = "txtDiscountPercent";
+            this.txtDiscountPercent.Size = new System.Drawing.Size(124, 20);
+            this.txtDiscountPercent.TabIndex = 3;
+            this.txtDiscountPercent.Text = "5";
             // 
             // label3
             // 
@@ -87,14 +86,14 @@
             this.label3.Text = "Discount &amount:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // txtDiscountamount
+            // txtDiscountAmount
             // 
-            this.txtDiscountamount.Location = new System.Drawing.Point(222, 121);
-            this.txtDiscountamount.Name = "txtDiscountamount";
-            this.txtDiscountamount.ReadOnly = true;
-            this.txtDiscountamount.Size = new System.Drawing.Size(124, 20);
-            this.txtDiscountamount.TabIndex = 7;
-            this.txtDiscountamount.TabStop = false;
+            this.txtDiscountAmount.Location = new System.Drawing.Point(222, 121);
+            this.txtDiscountAmount.Name = "txtDiscountAmount";
+            this.txtDiscountAmount.ReadOnly = true;
+            this.txtDiscountAmount.Size = new System.Drawing.Size(124, 20);
+            this.txtDiscountAmount.TabIndex = 7;
+            this.txtDiscountAmount.TabStop = false;
             // 
             // label4
             // 
@@ -121,7 +120,7 @@
             this.btnCalculate.Location = new System.Drawing.Point(164, 185);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
-            this.btnCalculate.TabIndex = 2;
+            this.btnCalculate.TabIndex = 4;
             this.btnCalculate.Text = "&Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
@@ -131,7 +130,7 @@
             this.btnExit.Location = new System.Drawing.Point(271, 185);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 3;
+            this.btnExit.TabIndex = 5;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -146,14 +145,15 @@
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtDiscountamount);
+            this.Controls.Add(this.txtDiscountAmount);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDiscountpercent);
+            this.Controls.Add(this.txtDiscountPercent);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSubtotal);
             this.Controls.Add(this.label1);
             this.Name = "frmInvoiceTotal";
             this.Text = "Cschmalenberg1b1 Invoice Total Form";
+            this.Load += new System.EventHandler(this.frmInvoiceTotal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -164,9 +164,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtSubtotal;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtDiscountpercent;
+        private System.Windows.Forms.TextBox txtDiscountPercent;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtDiscountamount;
+        private System.Windows.Forms.TextBox txtDiscountAmount;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Button btnCalculate;

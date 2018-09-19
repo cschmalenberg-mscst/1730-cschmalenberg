@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cschmalenberg1b", "cschmalenberg1b\cschmalenberg1b.csproj", "{C41AB6A5-42AF-42A2-BC42-9ABFA5C373F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cschmalenberg1c1", "Cschmalenberg1c1\Cschmalenberg1c1.csproj", "{C9C7E792-59F1-4392-8BF3-B782919F602D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C41AB6A5-42AF-42A2-BC42-9ABFA5C373F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C41AB6A5-42AF-42A2-BC42-9ABFA5C373F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C41AB6A5-42AF-42A2-BC42-9ABFA5C373F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9C7E792-59F1-4392-8BF3-B782919F602D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9C7E792-59F1-4392-8BF3-B782919F602D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9C7E792-59F1-4392-8BF3-B782919F602D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9C7E792-59F1-4392-8BF3-B782919F602D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
