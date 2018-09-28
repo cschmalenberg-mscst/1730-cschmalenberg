@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cschmalenberg1b", "cschmale
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cschmalenberg1c1", "Cschmalenberg1c1\Cschmalenberg1c1.csproj", "{C9C7E792-59F1-4392-8BF3-B782919F602D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cschmalenberg1d1", "cschmalenberg1d1\cschmalenberg1d1.csproj", "{774644D5-1408-490B-B597-F40A736ED8C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C9C7E792-59F1-4392-8BF3-B782919F602D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9C7E792-59F1-4392-8BF3-B782919F602D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9C7E792-59F1-4392-8BF3-B782919F602D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774644D5-1408-490B-B597-F40A736ED8C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774644D5-1408-490B-B597-F40A736ED8C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774644D5-1408-490B-B597-F40A736ED8C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774644D5-1408-490B-B597-F40A736ED8C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
